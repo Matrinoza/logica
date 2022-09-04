@@ -1,1 +1,47 @@
-
+Inicio del programa "Limpieza el final feliz"
+	
+	Interfaz grafica FrmInicio("Inicio")
+		etiqueta TblTitle("Limpieza el final feliz")
+		etiqueta TblIngrese("Ingrese: ")
+		etiqueta TblUsuario("Usuario")
+		
+			caja de texto TxtUss
+			
+		etiqueta TblContraseña("Contraseña")
+		
+			caja de texto TxtPass
+			
+		marco tipo de servicio MrcTipoDeServicio("Tipo de servicio")
+		
+			boton de opcion OprCasa-ph-depa("Casa / PH / Deparatamento")
+			boton de opcion OprSalon-edificio-country("Salon / Edificio / Country")
+			boton de opcion OprEdificio("Edificio")
+			
+		fin MrcTipoDeServicio
+		etiqueta TblSubTitlle("Cantidad de gente necesaria")
+			cuadro de lista CboGente ("se necesia")
+			
+			1 al 100
+			
+			fin CboGente
+		boton de comando CmdSiguiente("Siguiente >>")
+	Fin de Interfaz grafica FrmInicio
+	
+	Interfaz grafica FrmPago("pago")
+		etiqueta LblTitle("Forma de pago")
+		marco tipo medio MrcMedio("Medios de pago")
+			boton ChkEfectivo("Efectivo")
+			boton ChkTransferencia("Transferencia")
+			boton ChkTaejeta("Tarjeta")
+			cuadro de lista CboOtros("otros")
+				
+				pagare
+				cheque
+				bitcoin
+				
+			fin CboOtros
+		fin MrcMedio
+		boton de comando CmdAtras("Atras")
+		boton de comando CmdPago("Pagar $")
+	Fin de Interfaz grafica FrmPago
+Fin del programa	
