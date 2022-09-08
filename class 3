@@ -1,0 +1,53 @@
+lo que se usa mucho es la memoria ram para que se ejecuten las sentencias respetado por el micro (cerebelo)
+	dentro de la ram se usan espacios denominados variables = espacio de memoria (nombre VarTotal)
+		VarTotal = en esto va un tipo de dato almacenable
+			din VarTotal as integer
+			las variables pueden ser locales o privadas / publicas o globales, se deferencian entre que las primera nacen y mueren y las sefundas se pueden ejecutar en cualquier parte del pograma
+				dependeindo de la funcion hay var: 											
+											contadoras (varA +1) es contadora se puede cambiar el numero 
+											acaumuladora varA = varA + varB (acumulacion de variables de distintas formas)
+											constantes = nunca cambian 
+	el programa sale dependiendo como lo ejecuta uno 
+	la pc trabajo como hacemos nosotros 
+calculo y memoria => calculadora
+
+ C A L C U L A D O R A
+	
+inicio programaCalculadora
+	
+	variables varNumUno tipo numerico = txtNumUno.txt (var goblal)
+	variables varNumDos tipo numerico = txtNumDos.txt
+	variables varTotal tipo numerico = 
+	
+	inicio de interfaz grafica FrmCalculadora
+		
+		inicio marco Mrcnumero("ingrese numero")
+			caja de texto txt numUno("")
+			caja de texto txt numDos("")
+		fin marco
+		
+		boton de comando btnSuma("+")
+		"	"	"	"	"btnResta("-")
+		"	"	"	"	"btnMulti("*")
+		"	"	"	"	"btnDiv("/")
+		etiqute lblResultado("resultado")
+		etiqueta lblTotal ("")
+	fin de interfaz grafica FrmCalculadora
+
+inicio de procedimiento BtnSuma = "click"
+	//variable  VarNumUno tipo numerica = txtNumUno.txt (var local)
+	//"	"	" VarNumDos 	"	"	"	= txtNumDos.txt
+	//"	"	" VarTotal = VarNumUno + VarNumDos
+	//lblResultado.txt = VarTotal.toString
+	
+	// -- suma -- //
+	
+	varTotal = 0
+	varTotal = varNumUno + varNumDos
+	lbl resultado.txt = varTotal.toString
+	timer[30s]
+	txtNumUno.txt("")
+	txtNumDos.txt("")
+	lblResultado.txt ("")
+	
+Fin procedimiento BtnSuma = "click"
