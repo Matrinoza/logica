@@ -1,0 +1,7 @@
+diseñar dos interfaces relacionados al ies, 
+	en la primera interfaz debera interrogar
+		sobre datos del alumno, situacion educativa y sobre la carrera, planes de estudio, tiempo estimado y forma de cursado
+	segunda intefaz grafica
+		preguntara sobre las espectativas que tiene sobre la carrera elegida, como supone que se va a insertar en el campo laboral 
+las interfaces deben ser transitables, deben tener
+		txt lbl, lst, img, opt, chk, mrc, calendario + 4 controles mas que se consideren necesarios
