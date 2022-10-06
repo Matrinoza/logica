@@ -1,0 +1,67 @@
+vectores y matriz
+	se trabaj con 7/8, mover datos en una array-matriz
+	matriz, se divide en pipeline que a su vez son 25-35 vectores( si se calcula mal, se distornsiona el objeto)
+
+Memoria ram se dibide en varios cuadraditos, 
+vector = VARIBLE COMPLEJA siempre es GLOBAL O PUBLICO, siempre es homogeneo(solo enteros) ºº unidemensional/ tambien tiene posciones de memoria, estas van afuera llamados indices, son inamobibles y no se puede hacer nada, lo que esta adentro del vector son valores absolutos y son lo que se pueden hacer cosas como registros y demas
+matriz ="	" 	"	"	"	"	"	"	"	"	"	"
+Estructura Vector VecA tipo numerico [6
+
+Procedimiento suma
+	 VarI tipo numerica
+	 VarTotal = 0
+	 Mientras i <= 5
+		 VarTotal = VarTotal + VecA(i)
+		 i= i + 1
+	 
+	 Fin Mientras
+Fin Procedimiento
+Procedimiento VectorInverso
+	 VarI = 5
+	 Mientras i >=0
+		 i = i -1
+		 VarTotal = VarTotal + VecA(i)
+		 
+	 Fin Mientras
+Fin Procedimiento
+
+Procedimiento Max Valor
+	variable i tipo numeria = i = 0
+	variable  max tipo numerica = VecA(i)
+	Mientras i <= 5
+		si Max < VecA(i)
+			Max = VecA (i)
+			
+		fin si
+		i = i +1
+	Fin Mientras
+Fin Procedimiento
+
+Calcular el promedio de los valores > 3, cuente la cantidad de valores repetidos
+
+Procedimento promedio
+	variable i tipo numerica = i = 3
+	variable Max tipo numerica = VecA(i)
+	variable Cantidad = 2
+	Mientras i > 3
+		i = (i + i) / Cantidad
+		Var Max = VecA(i)
+	Fin Mientras
+Fin Procedimiento
+
+// solucion correcta
+
+	Procedimiento
+		variable i tipo numerico
+		"	"	Promedio tipo numerico
+		"	" 	VarTotal "	"	"	"
+		"	"	Contador "  "	"	"
+		Mientras i <= 5
+			Si VecA(i) > 3
+				Cotador= contador +1
+				VarTotal = VarTotal + VecA(i)
+			Fin Si
+		i = i + 1
+		Fin Mientras
+		promedio = VarTotal/Contador
+		LblPromedio.txt = Promedio.Tostring
