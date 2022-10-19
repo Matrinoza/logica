@@ -1,0 +1,88 @@
+VecA [100] tipo Numerico
+VecB [100] "	"	"   "
+VecC [200] "	"	"   "
+VecH [3]   "	"	"   "
+VecZ [100] tipo Texto
+
+//1 cargara el VecC intercalando los valores del VecA y el VecB
+//2 cargara el VecC con el VecA y el VecB en los primeros 100 lugares restando los vectores y en los 100 restantes 
+los segundos 100 sumando VecA y VecB mas los 100 primeros de VecC
+//3 completara el VecH de la siguiente manera en la posicion 0 el total del VecA y en la posicion 1 el total de VecB y en la 2 el total del VecC, observascion utilizara un solo mientras 
+//4 cargara el VecZ de la forma comparando cada posicion del VecA con el VecB y cargara en la posicion respectiva A o B dependeiendo el que tenga el mayor valor 
+
+
+
+// 1
+
+Inicio de programa
+	inicio de procedimiento uno
+		estructura VectorA VecA[100] tipo Numerico
+		estructura VectorB VecB[100] tipo Numerico
+		estructura VectorC VecC[200] tipo Numerico
+		
+		variable i tipo numerica
+		variable e tipo numerica
+		i = 0
+		e = 0
+		
+		Mientras i <=200
+			VecC[i] = VecA[i]
+			i = i + 1 
+		Fin Mientras
+		
+		Mientras e <=200
+			VecC[e] = VecB[e]
+			e = e + 2
+		Fin Mientras
+		
+	Fin de procedimiento
+Fin de programa
+
+Correccion
+
+i = 0 || e = 0
+
+Mientras i <= 200
+
+	VecC[i] = VecA[e]
+	i = i + 1
+	VecC[i] = VecB[e]
+	i = 1 + 1
+	e = e + 1
+	
+Fin Mientras
+
+// 2
+
+Inicio de programa
+	inicio de procedimiento unodos
+		estructura VectorA VecA[100] tipo Numerico
+		estructura VectorB VecB[100] tipo Numerico
+		estructura VectorC VecC[200] tipo Numerico
+		
+		e = 0 || i = 0
+		
+		si { VecC[200] = i - 2 && e - 1
+		VecA[1] && VecB [e] = VecC = VecA + VecB
+		}
+		fin si
+		
+	Fin procedimiento
+Fin Programa
+
+Correccion
+
+e = 0 || i = 0
+
+Mientras i <= 99
+	VecC(i) = VecA(i) - VecB(i)
+	i = i
+Fin Mientras
+Mientras i <= 199
+	VecC(i) = VecC(e)+ VecA(e)+ VecB(e)
+	i = i + 1
+	e = e + 1
+Fin Mientras
+
+// 3
+
