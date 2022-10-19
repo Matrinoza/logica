@@ -85,4 +85,16 @@ Mientras i <= 199
 Fin Mientras
 
 // 3
+// 3
 
+i = 0
+mientras i <= 199
+	Si i <= 99
+		VecH(0) = VecH(z) + VecA(i)
+		VecH(i) = VecH(z) + VecB(i)
+		VecH(2) = VecH(z) + VecC(i)
+		Sino
+			VecH(z) = VecH(z) + VecC(i)
+		fin sino
+	Fin Si
+	i = i + 1
