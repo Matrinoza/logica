@@ -1,0 +1,40 @@
+var = buena administracion de la memeoria
+
+var pueden ser = locales o privadas / goblaes o publicas } esta es de acuerdo a la ubicaicion
+				constantes                              |
+				contadora (suma valores)                | esta es de acuerdo a la funcion
+				acumuladora (las acumula no las suma)   |
+				
+Esto se trabaja atraves de una estructura vector(homogeneo y unidireccional), le sigue el nombre y despues el tipo de dato (son homogeneas) y al final el tamaño {para sacar la dimension es con DinVec}
+
+VecA[100] = i
+VecB[100] = e
+VecC[200]
+
+i = 0 | e = 0
+
+Mientras i <=199
+
+	 VecC(i)= VecA(e)
+	 i = i + 1
+	 VecC(i)= VecB(e)
+	 i = i + 1
+	 e = e + 1
+
+fin mientras
+
+
+
+//---- tarea
+
+VecA[100]
+VecB[200]
+VecC[300]
+VecD[1000]
+
+	1 / sumara el VecA, cargara el VecB los primeros 100 lugares con el VecA y los 2dos 100 con el VecA duplicado
+	2 / cargara el VecC intercalando el VecA con el VecB
+	3 / cargar el VecD de la siguiente forma intercalando el VecB con el VecC y cada tercera posicion completar con 0
+	4 / recorer el VecD identifiacando cual es el mayor valor absoluto mas alto,
+  5 / recorer el VecD contando los repetidos, teniendo el cuenta que solo se pueden repitir una vez
+  6 / cargara el VecD de la forma con el VecC en forma inversa, el VecB de forma inversa, los ultimos 500 los complementara con los primeros 500 de forma duplicada
