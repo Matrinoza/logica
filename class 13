@@ -1,0 +1,30 @@
+matrices
+	7 metodos de ordenamientos -> varios mientras
+		quick sort
+		burbuja
+			15 lineas
+			agarra de a un numero pasandolo al final (da muchas vueltas)
+			pasa por el evento triangulacion
+			3 variables
+			siempre con una posicion menor al valor del Vector
+
+--------------------------------
+procedimiento metodo de burbuja
+--------------------------------
+
+	variable I tipo numerica
+	"	"	Aux "	"	"
+	"	"   Vueltas "	"
+
+	Mientras Vueltas <= 4
+		Mientras i <= 3
+			Si VecA [i] < VecA[i + 1] entonces
+				Aux = VecA [i]
+				VecA = VecA[i + 1]
+				VecA[i + 1] = Aux
+			Fin Si
+			i = i + 1
+		Fin Mientras
+		i = 0
+		Vueltas = Vueltas + 1
+	Fin Mientras
