@@ -1,0 +1,32 @@
+cargara la matriz B con la matriz A en forma inversa, cargara el vector A con la matriz A, cargara el vector B con la matriz A
+cargara el vector C intercalando valores de matriz A y la B 
+intercalara las columnas pares de la matriz A con las pares de la B
+calculra el > valor de la matriz A y B 
+si el promedio de la matriz A supera a la B cargara el vector A con la matriz del > valor 
+cargara el vector A exlcusibvamente con los valores > 10 de la matriz A y B informando si alcanzo a leer las dos matrices 
+se dispone de una matriz C 12*20 que se debera cargar en el primer cuadrante la matriz A duplicada en el cuadrante 2, la matriz A tripilcada, en el cuadrante 3 multiplicando el cuadrante 1*2 y el 4 se cargara sumando los 3 anteriores 
+
+MatA [3][5]
+MatB [3][5]
+VecA [15]
+VecB [8]
+VecC [30]
+procedimiento uno
+	Variable FMatA tipo numerica = 2
+	Variable CMatA tipo numerica = 4
+	Variable FMatB tipo numerica
+	Variable CMatB tipo numerica
+	inicio intefaz
+		Mientras FMatB <= 2
+			Mientras CMatB <= 4
+				MatB (FMatB)(CMatB) = MatA(FMatA)(CMatA)
+				CMatA = CMatA -1
+				CMatB = CMatB +1
+			fin Mientras
+			CMatB = 0
+			CMatA = 2
+			FMatA = FMatB - 1
+			FMatB = FMatB + 1
+		fin Mientras
+	fin intefaz
+fin procedimiento
