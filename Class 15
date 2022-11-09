@@ -8,7 +8,7 @@ MatB[20,20]
 2 ) multiplicara cada posicion del VecA * MatA y cargara MatB de la sigueinte forma, con el resultado que supere los 10, caso contrario cargara con 0 dicha posicion
 3 ) cargara la MatA de la siguiente forma sumando el primer cuadrante de la MatB con el cuarto cuadrante de la MatB haciendo el recorido de la forma inversa 
 4 ) cargara el VecB de la sigueinte forma intercalando los valores del VecA con MatA 
-5 ) mediente una intefaz usted puede ingresar un valor, debera recorrer la MatB calculando la cantidad de valores que superan el numero ingresado, contar cuantos ingresados tiene, cuantos por debajo de ese valor ingresado
+5 ) mediente una intefaz usted puede ingresar un valor, debera recorrer la MatB calculando la cantidad de valores que superan el numero ingresado, contar cuantos ingresados tiene, cuantos por debajo de ese valor ingresado y sacar el porcentaje de los mayores, iguales, menores y repetidos
 
 1 )
 
