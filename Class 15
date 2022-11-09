@@ -1,0 +1,111 @@
+VecA[100]
+VecB[200]
+VecC[10]
+MatA[10,10]
+MatB[20,20]
+
+1 ) cargara el VecC con los totales de cada fila MatA
+2 ) multiplicara cada posicion del VecA * MatA y cargara MatB de la sigueinte forma, con el resultado que supere los 10, caso contrario cargara con 0 dicha posicion
+3 ) cargara la MatA de la siguiente forma sumando el primer cuadrante de la MatB con el cuarto cuadrante de la MatB haciendo el recorido de la forma inversa 
+4 ) cargara el VecB de la sigueinte forma intercalando los valores del VecA con MatA 
+5 ) mediente una intefaz usted puede ingresar un valor, debera recorrer la MatB calculando la cantidad de valores que superan el numero ingresado, contar cuantos ingresados tiene, cuantos por debajo de ese valor ingresado
+
+1 )
+
+Inicio programa
+	Inicio procedimiento
+		i = 0
+		e = 0
+		MatA(x) = 0
+		MatA(y) = 0
+		Mientras MatA(x) => 10
+			MatA(x) = VecC(i)
+			i = i + 1
+		Fin Mientras
+		Mientras MatA(y) => 10
+			MatA(y) = VecC(e)
+			e = e + 1
+		Fin Mientras
+	Fin procedimiento
+Fin programa
+
+correccion ---------------------------------------------------------------------------------------------------
+
+f = 0 | c = 0
+Mientras f <= 9
+	Mientras c <= 9
+		VecC(f) = MatA(f)(c) + VecA(c)
+		C = c + 1
+	Fin Mientras
+	f = f + 1
+Fin Mientras
+
+------------------------------------------------------------------------------------------------------------
+
+2 )
+
+Inicio procedimiento
+	Variable i tipo numerica
+	Variable f tipo numerica
+	Variable c tipo numerica
+	
+	Mientras f <= 9
+		Mientras c <= 9
+			VecA(i) = VecC(i)* MatA(f)(c)
+			Si VecA(i) > 10
+				MatB (f)(c) = VecA(i)
+				Sino 
+					MatB(f)(c) = 0
+				Fin Sino
+			Fin Si
+			c = c + 1
+			i = i + 1
+		Fin Mientras
+		c = 0
+		f = f +1 
+	Fin Mientras
+Fin procedimiento
+
+3 )
+Inicio procedimiento
+	Variable c tipo numerica
+	Variable f tipo numerica
+	Variable e tipo numerica
+	Variable i tipo numerica
+	
+	f = 0 | c = 0 | e = 19 | i = 19
+	
+	Mientras f <= 9
+		Mientras c <= 9
+			MatB(f)(c) = MatA(f)(c) + 1
+			c = c + 1
+		Fin Mientras
+		f = f + 1
+	Fin Mientras
+	
+	Mientras e <= 9
+		Mientras i <= 9
+			MatB(e)(i) = MatA(e)(i) + 1
+			i = i + 1
+		Fin Mientras
+		e = e + 1
+	Fin Mientras
+
+Fin procedimiento
+
+correccion ---------------------------------------------------------------------------------------------------
+
+f = 0 | c = 0 | ff = 19 | cc = 19
+
+Mientras f <= 9
+	Mientras c <= 9
+		MatA (f)(c) = MatB (f)(c) + MatB (ff)(cc)
+		cc = cc - 1
+		c = c + 1
+	Fin Mientras
+	c = 0
+	cc = 19
+	f = f + 1, ff = ff + 1
+Fin Mientras
+
+------------------------------------------------------------------------------------------------------------
